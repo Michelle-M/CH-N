@@ -1,0 +1,219 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-principal {
+    max-width: 875px;
+    min-width: 734px;
+    height: auto;
+    display: flex;
+    border: solid 1px lightgrey;
+}
+
+.contenedor-img {
+    width: 40%;
+    height: 220px;
+    position: relative;
+    display: inline-block;
+}
+
+.contenedor-img .superior {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.contenedor-img .superior p {
+    font-size: 0.8em;
+    color: white;
+    background-color: darkorchid;
+    padding: 5px;
+}
+
+.contenedor-img .superior i { /*ARREGLAR PORQUE SE SALE DE SU DIV*/
+    margin-left: 200px;
+}
+
+.contenedor-img .slider {
+    width: 100%;
+    height: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 35vh; /*ARREGLAR*/
+}
+
+.contenedor-img .precio-descripcion {
+    display: none;
+}
+
+.contenedor-texto {
+    background-color: #fafafa;
+    margin: 0;
+    width: 60%;
+}
+
+.contenedor-texto .titulo-subtitulo h3 {
+    color: deepskyblue;
+    font-weight: normal;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 12px 0 0 12px;
+}
+
+.contenedor-texto .titulo-subtitulo .ubicacion {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+
+.contenedor-texto .titulo-subtitulo .ubicacion p {
+    color: darkgrey;
+    font-size: 0.8em;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.contenedor-texto .titulo-subtitulo .ubicacion i {
+    color: darkgrey;
+}
+
+.contenedor-texto .descripcion {
+    margin-top: 15px;
+    font-size: 0.8em;
+    margin-left: 12px;
+}
+
+.contenedor-texto .precio {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+.contenedor-texto .precio h2 {
+    margin: 0;
+    color: dimgray;
+    margin-left: 12px;
+}
+
+.contenedor-texto .precio p {
+    margin: 0;
+    color: deepskyblue;
+    font-size: 0.7em;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+.contenedor-texto .precio h4 {
+    margin: 0;
+    color: deepskyblue;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.95em;
+    margin-left: 3px;
+}
+
+.contenedor-texto .especificaciones-contacto {
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    justify-content: space-between;
+    height: 42px;
+    margin-top: 10px;
+}
+
+.contenedor-texto .especificaciones-contacto ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-texto .especificaciones-contacto ul li {
+    list-style: none;
+    display: inline;
+    font-size: 0.7em;
+    font-weight: bolder;
+    margin-left: 12px;
+}
+
+.contenedor-texto .especificaciones-contacto button {
+    border: none;
+    background-color: lightgray;
+    color: deepskyblue;
+    font-weight: bolder;
+    margin-right: 12px;
+    padding: 0;
+}
+
+@media screen and (max-width:414px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedor-principal {
+        max-width: 414px;
+        min-width: 320px;
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .contenedor-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-img .superior i { /*ARREGLAR PORQUE SE SALE DE SU DIV*/
+        margin-left: 180px;
+    }
+
+    .contenedor-img .precio-descripcion {
+        display: block;
+        position: absolute; /*ARREGLAR*/
+        z-index: 1;
+    }
+
+    .contenedor-img .precio-descripcion h2 {
+        margin: 0;
+        color: dimgray;
+        margin-left: 12px;
+    }
+
+    .contenedor-img .precio-descripcion ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contenedor-img .precio-descripcion ul li {
+        list-style: none;
+        display: inline;
+        font-size: 0.7em;
+        font-weight: bolder;
+        margin-left: 12px;
+    }
+
+    .contenedor-texto {
+        width: 100%;
+    }
+
+    .contenedor-texto .especificaciones-contacto {
+        background-color: #fafafa;
+    }
+
+    .contenedor-texto .especificaciones-contacto button {
+        background-color: #fafafa;
+        margin-left: 220px; /*ARREGLAR*/
+    }
+
+    .contenedor-texto .precio {
+        display: none;
+    }
+
+    .contenedor-texto .especificaciones-contacto ul {
+        display: none;
+    }
+
+}

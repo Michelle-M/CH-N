@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="https://kit.fontawesome.com/2475c656c3.js"></script>
+    <title>Navent</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-img">
+            <div class="superior">
+                <p>Súper destacado</p>
+                <i class="fas fa-heart fa-lg"></i> <!--https://fontawesome.com/kits/2475c656c3/use-->
+            </div>
+            <div class="slider">
+                <div><img src="img/entrada-edificio.jpg" alt=""></div> 
+                <div><img src="img/foto1.jpeg" alt=""></div>
+                <div><img src="img/foto2.jpeg" alt=""></div>
+                <div><img src="img/foto3.jpeg" alt=""></div>
+            </div>
+            <div class='precio-descripcion'>
+                <h2>U$S 1.400.000</h2>
+                <ul class="especificaciones">
+                    <li>380 m2</li>
+                    <li>3 Dormitorios</li>
+                    <li>2 Baños</li>
+                    <li>2 Cocheras</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenedor-texto">
+            <div class="titulo-subtitulo">
+                <h3>Título de la propiedad</h3>
+                <div class="ubicacion">
+                    <i class="fas fa-map-marker-alt fa-xs"></i>
+                    <p>Juan Francisco Seguí 3900, Palermo Chico, Pal...</p>
+                </div>
+            </div>
+            <div class="descripcion">
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
+                texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el
+                año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+            </div>
+            <div class="precio">
+                <h2>U$S 1.400.000</h2>
+                <p>$/m2</p><h4>3.680</h4>
+            </div>
+            <div class="especificaciones-contacto">
+                <ul class="especificaciones">
+                    <li>380 m2</li>
+                    <li>3 Dormitorios</li>
+                    <li>2 Baños</li>
+                    <li>2 Cocheras</li>
+                </ul>
+                <button class="contacto">CONTACTAR</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slick();
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
